@@ -30,7 +30,7 @@
         <div class="slides">
             <section>
                 <h1>Developer Ideas</h1>
-
+                <img src="img/title.png">
             </section>
 
             <section>
@@ -385,26 +385,26 @@ http.createServer(function (req, res) {
             // Optional reveal.js plugins
             dependencies: [{
                 src: 'lib/js/classList.js',
-                condition: function() {
+                condition: function () {
                     return !document.body.classList;
                 }
             }, {
                 src: 'plugin/markdown/marked.js',
-                condition: function() {
+                condition: function () {
                     return !!document.querySelector('[data-markdown]');
                 }
             }, {
                 src: 'plugin/markdown/markdown.js',
-                condition: function() {
+                condition: function () {
                     return !!document.querySelector('[data-markdown]');
                 }
             }, {
                 src: 'plugin/highlight/highlight.js',
                 async: true,
-                condition: function() {
+                condition: function () {
                     return !!document.querySelector('pre code');
                 },
-                callback: function() {
+                callback: function () {
                     hljs.initHighlightingOnLoad();
                 }
             }, {
@@ -415,7 +415,6 @@ http.createServer(function (req, res) {
                 async: true
             }]
         });
-
     </script>
 
 </body>
