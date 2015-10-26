@@ -90,24 +90,63 @@ http.createServer(function (req, res) {
                     <h2><span class="fragment">GoDaddy</span><span class="fragment"> &bull; Microsoft</span></h2>
                 </section>
                 <section>
-                    <h1>Cons to using Node.js</h1>
+                    <h1>Cons</h1>
                     <p class="fragment">Designed for speed and throughput, not computation</p>
                     <p class="fragment">Written in JavaScript</p>
+                    <p class="fragment">Works best with NoSQL data stores</p>
                 </section>
             </section>
             <section>
                 <section>
                     <h1>MongoDB</h1>
-                    <p class="fragment"></p>
-                    <p class="fragment"></p>
-                    <p class="fragment"></p>
-                    <p class="fragment"></p>
+                    <p class="fragment">Named after the word huMONGOus</p>
+                    <p class="fragment">NoSQL data store</p>
+                    <p class="fragment">Built for scalability and high availability</p>
+                </section>
+                <section>
+                    <h1>Comparison to SQL</h1>
+                    <img src="img/mongo-mapping.png">
+                </section>
+                <section>
+                    <h1>Example Document</h1>
+                    <pre><code>{
+    "_id": "AF567G78B5723",
+    "title": "Sgt. Pepper's Lonely Hearts Club Band",
+    "artist": ObjectId("507f191e810c19729de860ea"),
+    "tracks":  [
+       {
+        "trackId": 1,
+        "title": "Sgt. Pepper's Lonely Hearts Club Band",
+        "length": "2:02",
+        "composer": [
+            {"last": "Lennon", "first": "John"},
+            {"last": "McCartney", "first": "Paul"}
+        ]
+        },
+        {
+        "trackId": 2,
+        "title": "With a Little Help From My Friends",
+        "length": "2:44",
+        "composer": [
+            {"last": "Lennon", "first": "John"},
+            {"last": "McCartney", "first": "Paul"}
+        ]
+        },
+        ...
+    ],
+    "year": 1967,
+    "cover": "AF567G78B5723.jpg"
+}</code></pre>
+                </section>
+                <section>
+                    <h1>Shards and Replica Sets</h1>
+                    <img src="img/mongo-shards.jpg">
                 </section>
                 <section>
                     <h1>Why use MongoDB over SQL?</h1>
-                    <p class="fragment"></p>
-                    <p class="fragment"></p>
-                    <p class="fragment"></p>
+                    <h2 class="fragment">I DON'T KNOW</h2>
+                    <p class="fragment">The question should be:</p>
+                    <h1 class="fragment">What is the right system for OCMS?</h1>
                 </section>
             </section>
             <section>
