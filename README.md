@@ -7,9 +7,9 @@
 ## External API
 **Scott**
 ## Node
-**Ryan**
+**Ryan** - Draft donw
 ## Mongo
-**Ryan**
+**Ryan** - Draft done
 ## Docker/Rancher
 **Ryan**
 ## Wiki
