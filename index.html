@@ -40,11 +40,11 @@
                     <p class="fragment">Gain useful application insights (usage, errors, statistics)</p>
                     <p class="fragment">Flexible enough to store data unique to each application</p>
                     <p class="fragment">Report on that data in real-time</p>
-                    <p class="fragment">Alert us on critical application errors or epochs (IFTTT)</p>
+                    <p class="fragment">Alert us on critical application errors or epochs</p>
                 </section>
                 <section>
                     <p>We already have similar systems in place for our infrastructure</p>
-                    <p>It's time to bring this concept to our applications</p>
+                    <p>It's time we bring this concept to our applications</p>
                 </section>
                 <section>
                     <h1>ELK</h1>
@@ -55,6 +55,89 @@
                     <h1>Microsoft</h1>
                     <p>Visual Studio Online + Application Insights</p>
                     <img src="img/vso-application-insights.jpg" alt="Application Insights" />
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h1>Exchange Platform</h1>
+                    <p class="fragment">Exchanges are authored via web interface</p>
+                    <p class="fragment">Define a series of steps that make up an exchange</p>
+                    <p class="fragment">Steps are based on configuration and reusable scripts</p>
+                    <p class="fragment">Emphasizes configuration over code</p>
+                    <p class="fragment">Glorified IFTTT (If This Then That)</p>
+                </section>
+                <section>
+                    <h1>TFS Build vNext</h1>
+                    <img src="img/tfs-build.png" alt="TFS Build vNext" />
+                </section>
+                <section>
+                    <h1>Add a Step</h1>
+                    <img src="img/tfs-add-step.png" alt="TFS Build vNext - add step" />
+                </section>
+                <section>
+                    <h1>View History/Status</h1>
+                    <img src="img/tfs-build-status.png" alt="TFS Build vNext - build status" />
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h1>External API</h1>
+                    <p class="fragment">Direct source for third parties to access public information</p>
+                    <p class="fragment">Dissuade others from scraping our sites and services</p>
+                    <p class="fragment">Support for multiple data formats (JSON, XML, CSV, etc.)</p>
+                    <p class="fragment">Charge fractions of a penny for each API call as a convenience fee</p>
+                    <p class="fragment">Control data access on a per-agency basis, and empower agencies to solve their own problems</p>
+                </section>
+                <section>
+                    <h1>Third Party Example</h1>
+                    <pre><code>https://data.oscn.net/cleveland/cases/1000.json</code></pre>
+                    <pre><code>{
+  "Id": 1000,
+  "County": "Cleveland"
+  "CaseNumber": "XY-2015-1",
+  "Style": "John Doe v. Oklahoma",
+  "FilingDate": "1/1/2015",
+  "Parties": [
+    {
+      "Id": 9000,
+      "FirstName": "John",
+      "LastName": "Doe",
+    },
+    ...
+  ],
+  ...
+}</code></pre>
+                </section>
+                <section>
+                    <h1>Warrant Collections Agency</h1>
+                    <pre><code>https://data.oscn.net/cleveland/warrants.json?{"IssuedDate": "10/1/2015"}</code></pre>
+                    <pre><code>[
+  {
+    "Id": 6001, "Name": "John Doe", "IssuedDate": "10/1/2015", ...
+  },
+  {
+    "Id": 6039, "Name": "Jane Doe", "IssuedDate": "10/1/2015", ...
+  },
+  ...
+]</code></pre>
+                </section>
+                <section>
+                    <h1>Data.gov</h1>
+                    <img src="img/data-gov.png" alt="Data.gov homepage" />
+                </section>
+                <section>
+                    <h1>Open Legislation</h1>
+                    <p>API for accessing legislative data from the NY State Senate</p>
+                    <img src="img/open-legislation.png" alt="NY State Senate Open Legislation homepage" />
+                </section>
+                <section>
+                    <h1>Other Benefits</h1>
+                    <p>Empower local developers through open data</p>
+                    <p>Crowdsource development efforts</p>
+                    <p>Get cool apps and publicity for free</p>
+                    <blockquote>Email updates when a case is updated, anyone?</blockquote>
                 </section>
             </section>
 
@@ -174,6 +257,26 @@ http.createServer(function (req, res) {
                     <p class="fragment"></p>
                     <p class="fragment"></p>
                     <p class="fragment"></p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Wiki</h1>
+                    <p class="fragment">BAs provide documentation and training materials in the form of disparate documents and emails</p>
+                    <p class="fragment">Provide a better delivery mechanism for documentation</p>
+                    <p class="fragment">Allow BAs to author and publish materials easily</p>
+                    <p class="fragment">Easy to access, search, and customize</p>
+                    <p class="fragment">Internal knowledge base for teams or clerks</p>
+                </section>
+                <section>
+                    <h1>StackEdit</h1>
+                    <p>Write documents using Markdown, a lightweight markup language used on sites like StackOverflow and reddit</p>
+                    <img src="img/stackedit.png" alt="StackEdit" />
+                </section>
+                <section>
+                    <h1>Relax</h1>
+                    <p>New generation CMS on top of React and Node.js</p>
+                    <img src="img/relax.jpg" alt="Relax" />
                 </section>
             </section>
             <section>
