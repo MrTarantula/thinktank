@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Think Tank</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h1>Developer Ideas</h1>
+
+            </section>
+
+            <section>
+                <section>
+                    <h1>Logging</h1>
+                    <p class="fragment">Unify disparate logging systems (file system, event log, database)</p>
+                    <p class="fragment">Gain useful application insights (usage, errors, statistics)</p>
+                    <p class="fragment">Flexible enough to store data unique to each application</p>
+                    <p class="fragment">Report on that data in real-time</p>
+                    <p class="fragment">Alert us on critical application errors or epochs</p>
+                </section>
+                <section>
+                    <p>We already have similar systems in place for our infrastructure</p>
+                    <p>It's time we bring this concept to our applications</p>
+                </section>
+                <section>
+                    <h1>ELK</h1>
+                    <p>Elasticsearch + Logstash + Kibana</p>
+                    <img src="img/kibana.png" alt="Kibana dashboard" />
+                </section>
+                <section>
+                    <h1>Microsoft</h1>
+                    <p>Visual Studio Online + Application Insights</p>
+                    <img src="img/vso-application-insights.jpg" alt="Application Insights" />
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h1>Exchange Platform</h1>
+                    <p class="fragment">Exchanges are authored via web interface</p>
+                    <p class="fragment">Define a series of steps that make up an exchange</p>
+                    <p class="fragment">Steps are based on configuration and reusable scripts</p>
+                    <p class="fragment">Emphasizes configuration over code</p>
+                    <p class="fragment">Glorified IFTTT (If This Then That)</p>
+                </section>
+                <section>
+                    <h1>TFS Build vNext</h1>
+                    <img src="img/tfs-build.png" alt="TFS Build vNext" />
+                </section>
+                <section>
+                    <h1>Add a Step</h1>
+                    <img src="img/tfs-add-step.png" alt="TFS Build vNext - add step" />
+                </section>
+                <section>
+                    <h1>View History/Status</h1>
+                    <img src="img/tfs-build-status.png" alt="TFS Build vNext - build status" />
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h1>External API</h1>
+                    <p class="fragment">Direct source for third parties to access public information</p>
+                    <p class="fragment">Dissuade others from scraping our sites and services</p>
+                    <p class="fragment">Support for multiple data formats (JSON, XML, CSV, etc.)</p>
+                    <p class="fragment">Charge fractions of a penny for each API call as a convenience fee</p>
+                    <p class="fragment">Control data access on a per-agency basis, and empower agencies to solve their own problems</p>
+                </section>
+                <section>
+                    <h1>Third Party Example</h1>
+                    <pre><code>https://data.oscn.net/cleveland/cases/1000.json</code></pre>
+                    <pre><code>{
+  "Id": 1000,
+  "County": "Cleveland"
+  "CaseNumber": "XY-2015-1",
+  "Style": "John Doe v. Oklahoma",
+  "FilingDate": "1/1/2015",
+  "Parties": [
+    {
+      "Id": 9000,
+      "FirstName": "John",
+      "LastName": "Doe",
+    },
+    ...
+  ],
+  ...
+}</code></pre>
+                </section>
+                <section>
+                    <h1>Warrant Collections Agency</h1>
+                    <pre><code>https://data.oscn.net/cleveland/warrants.json?{"IssuedDate": "10/1/2015"}</code></pre>
+                    <pre><code>[
+  {
+    "Id": 6001, "Name": "John Doe", "IssuedDate": "10/1/2015", ...
+  },
+  {
+    "Id": 6039, "Name": "Jane Doe", "IssuedDate": "10/1/2015", ...
+  },
+  ...
+]</code></pre>
+                </section>
+                <section>
+                    <h1>Data.gov</h1>
+                    <img src="img/data-gov.png" alt="Data.gov homepage" />
+                </section>
+                <section>
+                    <h1>Open Legislation</h1>
+                    <p>API for accessing legislative data from the NY State Senate</p>
+                    <img src="img/open-legislation.png" alt="NY State Senate Open Legislation homepage" />
+                </section>
+                <section>
+                    <h1>Other Benefits</h1>
+                    <p>Empower local developers through open data</p>
+                    <p>Crowdsource development efforts</p>
+                    <p>Get cool apps and publicity for free</p>
+                    <blockquote>Email updates when a case is updated, anyone?</blockquote>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h1>Node.js</h1>
+                    <p class="fragment">Built on Google's V8 JavaScript engine - incredibly fast</p>
+                    <p class="fragment">Asynchronous - thousands of concurrent connections</p>
+                    <p class="fragment">Efficient - uses virtually no CPU or RAM when there is no activity</p>
+                    <p class="fragment">Unified language (JavaScript) across the stack</p>
+                </section>
+                <section>
+                    <h1>Node Package Manager (NPM)</h1>
+                    <p class="fragment">Publically available, reusable components</p>
+                    <p class="fragment">Greatly simplifies dependency management</p>
+                    <p class="fragment">Large community of contributors</p>
+                    <p class="fragment">Nearly 200,000 packages available</p>
+                </section>
+                <section>
+                    <h1>Simple Node Web Server</h1>
+                    <pre><code>var http = require('http');
+http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end(myJavascriptObject.getSomeStatusInfo());
+}).listen(1337, "127.0.0.1");</code></pre>
+                </section>
+                <section class="nodeUsers">
+                    <h1>Who uses Node.js?</h1>
+                    <h2><span class="fragment">Netflix</span><span class="fragment"> &bull; Dow Jones</span></h2>
+                    <h2><span class="fragment">eBay</span><span class="fragment"> &bull; Ancestry.com</span></h2>
+                    <h2><span class="fragment">Shutterstock</span><span class="fragment"> &bull; LinkedIn</span></h2>
+                    <h2><span class="fragment">New York Times</span><span class="fragment"> &bull; Uber</span></h2>
+                    <h2><span class="fragment">GoDaddy</span><span class="fragment"> &bull; Microsoft</span></h2>
+                </section>
+                <section>
+                    <h1>Cons to using Node.js</h1>
+                    <p class="fragment">Designed for speed and throughput, not computation</p>
+                    <p class="fragment">Written in JavaScript</p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>MongoDB</h1>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                </section>
+                <section>
+                    <h1>Why use MongoDB over SQL?</h1>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Docker</h1>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                </section>
+                <section>
+                    <h1>Containers</h1>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                </section>
+                <section>
+                    <h1>How it fits together</h1>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                </section>
+                <section>
+                    <h1>Rancher</h1>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Wiki</h1>
+                    <p class="fragment">BAs provide documentation and training materials in the form of disparate documents and emails</p>
+                    <p class="fragment">Provide a better delivery mechanism for documentation</p>
+                    <p class="fragment">Allow BAs to author and publish materials easily</p>
+                    <p class="fragment">Easy to access, search, and customize</p>
+                    <p class="fragment">Internal knowledge base for teams or clerks</p>
+                </section>
+                <section>
+                    <h1>StackEdit</h1>
+                    <p>Write documents using Markdown, a lightweight markup language used on sites like StackOverflow and reddit</p>
+                    <img src="img/stackedit.png" alt="StackEdit" />
+                </section>
+                <section>
+                    <h1>Relax</h1>
+                    <p>New generation CMS on top of React and Node.js</p>
+                    <img src="img/relax.jpg" alt="Relax" />
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Ideabox</h1>
+                    <p class="fragment">Collect and surface ideas from users</p>
+                    <p class="fragment">Transparent - all ideas are tied to users</p>
+                    <p class="fragment">Voting</p>
+                    <p class="fragment">Comments</p>
+                    <p class="fragment">Sort by comments, likes, or age</p>
+                </section>
+                <section>
+                    <h1>Microsoft</h1>
+                    <img src="img/ideabox-vscode.PNG">
+                </section>
+                <section>
+                    <h1>Best Buy</h1>
+                    <img src="img/ideabox-bestbuy.PNG">
+                </section>
+                <section>
+                    <h1>Stack Overflow</h1>
+                    <img src="img/ideabox-stack.PNG">
+                </section>
+                <section>
+                    <h1>18F</h1>
+                    <img src="img/ideabox-18f.PNG">
+                </section>
+                <section>
+                    <h1>Prototype</h1>
+                    <a href="LINKTOIDEABOXGOESHERE" target="_blank"><img src="img/ideabox-proto.PNG"></a>
+                </section>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                condition: function() {
+                    return !!document.querySelector('pre code');
+                },
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }]
+        });
+
+    </script>
+
+</body>
+
+</html>
