@@ -236,10 +236,10 @@ http.createServer(function (req, res) {
                 </section>
                 <section>
                     <h1>CERN</h1>
-                    <p class="fragment">3000 Physicists</p>
+                    <p class="fragment">3,000 Physicists</p>
                     <p class="fragment">10 petabytes of data</p>
                     <p class="fragment">Per year!</p>
-                    <p class="fragment">6000 documents per second throughput</p>
+                    <p class="fragment">6,000 documents per second throughput</p>
                 </section>
                 <section>
                     <h1>Why use MongoDB over SQL?</h1>
@@ -251,28 +251,58 @@ http.createServer(function (req, res) {
             <section>
                 <section>
                     <h1>Docker</h1>
+                    <p class="fragment">Similar to virtualization</p>
+                    <p class="fragment">Houses standardized units called containers</p>
+                    <p class="fragment">Runs on host kernel, boots in seconds</p>
                     <p class="fragment"></p>
-                    <p class="fragment"></p>
-                    <p class="fragment"></p>
+                </section>
+                <section>
+                    <h1>Virtualization</h1>
+                    <img src="img/docker-virt.png">
                 </section>
                 <section>
                     <h1>Containers</h1>
-                    <p class="fragment"></p>
-                    <p class="fragment"></p>
-                    <p class="fragment"></p>
+                    <img src="img/docker-cont.png">
                 </section>
                 <section>
-                    <h1>How it fits together</h1>
-                    <p class="fragment"></p>
-                    <p class="fragment"></p>
-                    <p class="fragment"></p>
+                    <h1>Containers contain:</h1>
+                    <p class="fragment">Base OS files</p>
+                    <p class="fragment">Application</p>
+                    <p class="fragment">App dependencies</p>
+                    <p class="fragment">That's it!</p>
+                </section>
+                <section>
+                    <h1>Benefits of containers</h1>
+                    <p class="fragment">Containers will work on any Docker host, from DEV to QA to PROD</p>
+                    <p class="fragment">No need to worry about environment inconsistencies</p>
+                    <p class="fragment">All dependencies are packaged within the container</p>
+                    <p class="fragment">Containers can be scaled out to many hosts quickly</p>
+                </section>
+                <section>
+                    <h1>Docker Registry</h1>
+                    <p class="fragment">Service for storing and sharing Docker images</p>
+                    <p class="fragment">Get the latest (or any) version of an app via CLI</p>
+                    <p class="fragment">It's like <span style="color:cyan;">apt-get</span> or
+                        <span style="color:cyan;">yum</span>, but for all of our applications</p>
                 </section>
                 <section>
                     <h1>Rancher</h1>
-                    <p class="fragment"></p>
-                    <p class="fragment"></p>
-                    <p class="fragment"></p>
-                    <p class="fragment"></p>
+                    <p class="fragment">Extends Docker functionality</p>
+                    <p class="fragment">Management console for Docker environments</p>
+                    <p class="fragment">Granular access control</p>
+                    <p class="fragment">Integrated load-balancing and availabilitys</p>
+                    <p class="fragment">Health checks and container monitoring</p>
+                </section>
+                <section>
+                    <h1>Web Interface</h1>
+                    <img src="img/rancher-hosts.png">
+                </section>
+                <section>
+                    <h1>Advanced Features</h1>
+                    <p class="fragment">Set up multiple environments, each with their own access levels</p>
+                    <p class="fragment">Package dependent containers as services for easy deployment</p>
+                    <p class="fragment">Automatically scale services across hosts based on load or schedule</p>
+                    <p class="fragment">Easily set up high availability across hosts for each service</p>
                 </section>
             </section>
             <section>
@@ -300,9 +330,8 @@ http.createServer(function (req, res) {
                     <h1>Ideabox</h1>
                     <p class="fragment">Collect and surface ideas from users</p>
                     <p class="fragment">Transparent - all ideas are tied to users</p>
-                    <p class="fragment">Voting</p>
-                    <p class="fragment">Comments</p>
-                    <p class="fragment">Sort by comments, likes, or age</p>
+                    <p class="fragment">Users vote up the best ideas</p>
+                    <p class="fragment">Users can leave comments on ideas</p>
                 </section>
                 <section>
                     <h1>Microsoft</h1>
