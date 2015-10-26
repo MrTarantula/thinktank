@@ -16,7 +16,7 @@
 
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
-
+    <link rel="stylesheet" href="css/style.css">
     <!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -58,7 +58,85 @@
                 </section>
             </section>
 
-            <section></section>
+            <section>
+                <section>
+                    <h1>Node.js</h1>
+                    <p class="fragment">Built on Google's V8 JavaScript engine - incredibly fast</p>
+                    <p class="fragment">Asynchronous - thousands of concurrent connections</p>
+                    <p class="fragment">Efficient - uses virtually no CPU or RAM when there is no activity</p>
+                    <p class="fragment">Unified language (JavaScript) across the stack</p>
+                </section>
+                <section>
+                    <h1>Node Package Manager (NPM)</h1>
+                    <p class="fragment">Publically available, reusable components</p>
+                    <p class="fragment">Greatly simplifies dependency management</p>
+                    <p class="fragment">Large community of contributors</p>
+                    <p class="fragment">Nearly 200,000 packages available</p>
+                </section>
+                <section>
+                    <h1>Simple Node Web Server</h1>
+                    <pre><code>var http = require('http');
+http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end(myJavascriptObject.getSomeStatusInfo());
+}).listen(1337, "127.0.0.1");</code></pre>
+                </section>
+                <section class="nodeUsers">
+                    <h1>Who uses Node.js?</h1>
+                    <h2><span class="fragment">Netflix</span><span class="fragment"> &bull; Dow Jones</span></h2>
+                    <h2><span class="fragment">eBay</span><span class="fragment"> &bull; Ancestry.com</span></h2>
+                    <h2><span class="fragment">Shutterstock</span><span class="fragment"> &bull; LinkedIn</span></h2>
+                    <h2><span class="fragment">New York Times</span><span class="fragment"> &bull; Uber</span></h2>
+                    <h2><span class="fragment">GoDaddy</span><span class="fragment"> &bull; Microsoft</span></h2>
+                </section>
+                <section>
+                    <h1>Cons to using Node.js</h1>
+                    <p class="fragment">Designed for speed and throughput, not computation</p>
+                    <p class="fragment">Written in JavaScript</p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>MongoDB</h1>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                </section>
+                <section>
+                    <h1>Why use MongoDB over SQL?</h1>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Docker</h1>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                </section>
+                <section>
+                    <h1>Containers</h1>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                </section>
+                <section>
+                    <h1>How it fits together</h1>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                </section>
+                <section>
+                    <h1>Rancher</h1>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                    <p class="fragment"></p>
+                </section>
+            </section>
             <section>
                 <section>
                     <h1>Ideabox</h1>
@@ -109,45 +187,39 @@
             transition: 'slide', // none/fade/slide/convex/concave/zoom
 
             // Optional reveal.js plugins
-            dependencies: [
-                {
-                    src: 'lib/js/classList.js',
-                    condition: function () {
-                        return !document.body.classList;
-                    }
-                },
-                {
-                    src: 'plugin/markdown/marked.js',
-                    condition: function () {
-                        return !!document.querySelector('[data-markdown]');
-                    }
-                },
-                {
-                    src: 'plugin/markdown/markdown.js',
-                    condition: function () {
-                        return !!document.querySelector('[data-markdown]');
-                    }
-                },
-                {
-                    src: 'plugin/highlight/highlight.js',
-                    async: true,
-                    condition: function () {
-                        return !!document.querySelector('pre code');
-                    },
-                    callback: function () {
-                        hljs.initHighlightingOnLoad();
-                    }
-                },
-                {
-                    src: 'plugin/zoom-js/zoom.js',
-                    async: true
-                },
-                {
-                    src: 'plugin/notes/notes.js',
-                    async: true
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
                 }
-				]
+            }, {
+                src: 'plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                condition: function() {
+                    return !!document.querySelector('pre code');
+                },
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }]
         });
+
     </script>
 
 </body>
